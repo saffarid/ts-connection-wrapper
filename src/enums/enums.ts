@@ -1,0 +1,18 @@
+export enum EModbusFunctions {
+  PING = -1,
+  READ_COIL_STATUS = 0x01,
+  READ_INPUT_STATUS = 0x02,
+  READ_HOLDING_REGISTERS = 0x03,
+  READ_INPUT_REGISTERS = 0x04,
+  WRITE_SINGLE_COIL = 0x05,
+  WRITE_SINGLE_REGISTER = 0x06,
+  WRITE_MULTIPLE_COILS = 0x0F,
+  WRITE_MULTIPLE_REGISTERS = 0x10
+}
+
+export enum ModbusRegisterTypes {
+  DISCRETE = 'Discrete',
+  COILS = 'Coils',
+  INPUT_REGISTERS = 'Input',
+  HOLDING_REGISTERS = 'Holding'
+}
